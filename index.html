@@ -17,12 +17,14 @@
                     <input type="text" class="form-control" id="itemName" placeholder="Bugün Ne Yapacaksın ?">
                     <button class="btn btn-outline-warning" type="button" id="addItem">Button</button>
                 </div>
+                <!-- Input boş geçildiğinde javascript yardımıyla d-none classı silinerek 1.5sn boyunca div görünür oluyor -->
                 <div id="alert" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
                     Bu alanı boş geçemezsiniz.
                     <button id="alertClose" type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
                     </button>
                   </div>
             </div>
+            <!-- Listeye eleman eklediğinde bu kısma geliyor -->
             <div class="list mt-5">
                 <ul class="list-group list-group-flush liste" id="liste">
                 </ul>

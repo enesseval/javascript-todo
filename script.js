@@ -4,16 +4,20 @@ const liste = document.getElementById('liste')
 const alertClose = document.getElementById('alertClose')
 let items = [];
 
-
+// localstorage da olan item varsa sayfa açıldığında yükleniyor
 loadItems()
 
 alertClose.addEventListener('click',function(){
     document.getElementById('alert').classList.add('d-none')
 })
 
+//input doldurulup butona basıldığında çalışan kısım
 addItem.addEventListener('click',createItem)
+
+// item silinmek istendiğinde çalışan kısım
 liste.addEventListener('click',deleteItem)
 
+//local storage içerisinde item varsa items adlı dizinin içerisine aktarılıyor
 function getItemsFromLS(){
     if(localStorage.getItem('todoapp') === null){
         items = [];
@@ -30,6 +34,7 @@ function loadItems(){
     })
 }
 
+//item ekle butonuna basıldığında gerekli kontrol yapılıp listeye ve localstorage a ekleme yapılıyor
 function createItem(e){
     if(itemName.value == ''){
         document.getElementById('alert').classList.remove('d-none')
