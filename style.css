@@ -1,0 +1,43 @@
+body{
+    background-color: #F0F0DF!important;
+}
+
+.container{
+    background-color: #2B3A42;
+    color: #F0F0DF;
+    height: 100vh;
+}
+
+.topBar{
+    text-align: center;
+    background-color: #3F5866;
+}
+
+.input{
+    width: 60%!important;
+    margin: 0 auto;
+}
+
+.list{
+    width: 50%!important;
+    margin: 0 auto;
+}
+
+.liste{
+    background-color: #2B3A42;
+}
+
+.list-group{
+    --bs-list-group-border-color:#FAA21B!important;
+    --bs-list-group-color:#fff!important;
+    --bs-list-group-bg:#2B3A42!important;
+}
+
+.delete{
+    float: right;
+}
+
+.alert{
+    width: 60%;
+    margin: 0 auto;
+}
